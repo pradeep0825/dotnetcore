@@ -18,6 +18,12 @@ namespace UsingFormCollection.Controllers
             return View();
         }
 
+        [HttpPost]
+        public string PostUsingFormCollection(IFormCollection form)
+        {
+            string myname = form["myName"];
+            return "Entered details : " + myname;
+        }
         public IActionResult Privacy()
         {
             return View();
