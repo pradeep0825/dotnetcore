@@ -1,0 +1,12 @@
+﻿@model UsingStronglyBinding.Models.Employee
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using(Html.BeginForm("PostUsingStronglyBinding","Home")){
+    <p>Enter your name :</p>
+    @Html.TextBoxFor(x => x.Name)
+    <p>Enter your Salary : </p>
+    @Html.TextBoxFor(x => x.Salary)
+    <input type="submit"/>
+}
