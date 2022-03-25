@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using(Html.BeginForm("JustChecking","Home")){
+    <p>Enter your name :</p>
+    <input type="text" name="myName"/>
+    <p>Enter your Age : </p>
+    <input type="text" name="myAge"/>
+    <input type="submit"/>
+}
